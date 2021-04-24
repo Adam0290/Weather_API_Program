@@ -6,7 +6,7 @@ const APIkey = `706cad06fcc037237dd82a444e6d9682`; // `` = Template String // >>
 let search = () => { // Arrow function //
     let cityname = document.querySelector("input").value;
     let data = fetch( // Fetch is called a promise >>>> it will call the link below and if its successful it will call  the .then function and if it fails it will execute another function. //
-      `http://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=${APIkey}`
+      `http://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=${APIkey}` // This is called the Base URL //
       ) // How to write a Variable in a Template String? >>>>>>>>>> Put it in a ${} //
     
       .then((response) => response.json()) // The .then function gets the result from the Fetch API call //
